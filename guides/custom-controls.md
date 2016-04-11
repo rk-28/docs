@@ -87,18 +87,14 @@ view-toggle {
 ```
 // behavior-driven approach
 cluster {
-  type: toggle-many;
-  selector: *;
-
-  cluster-option {
-    value: "element type";
-    label: "By type";
-    // selector?
+  option {
+    value: person by "skills offered" as "Skill";
+    label: "By offers";
   }
   
-  cluster-option {
-    value: "location";
-    label: "By location";
+  option {
+    value: person by "skills needed" as "Skill";
+    label: "By needs";
   }
 }
 
