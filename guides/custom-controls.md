@@ -65,20 +65,26 @@ view-select {
 }
 ```
 
-### Cluster toggle
+### View toggle
+
+Allows you to turn on multiple views / partials at the same time.
 
 ```
-// control-driven approach
-button-group {
-  type: toggle-one; 
-  action: cluster;
-  
-  button {
-    value: "element type";
-    label: "By type";
+view-toggle {
+  // shorthand
+  views: "View one", "View two";
+  views: pers-123, pers-234;
+
+  // nested?
+  view {
+    label: "
   }
 }
+```
 
+### Cluster
+
+```
 // behavior-driven approach
 cluster {
   type: toggle-many;
@@ -94,5 +100,45 @@ cluster {
     value: "location";
     label: "By location";
   }
+}
+
+// control-driven approach
+button-group {
+  type: toggle-one; 
+  action: cluster;
+  
+  button {
+    value: "element type";
+    label: "By type";
+  }
+}
+```
+
+### Control groups
+
+Groups allow you to place components side-by-side instead of stacking on top of each other.
+
+```
+group {
+  stat {
+    value: element-count;
+    label: "Elements";
+  }
+  
+  stat {
+    value: connection-count;
+    label: "Connections";
+  }
+}
+```
+
+### Stat
+
+Include map-level stats.
+
+```
+stat {
+  value: count(person);
+  label: "People";
 }
 ```
