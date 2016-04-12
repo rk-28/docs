@@ -138,3 +138,11 @@ stat {
   label: "People";
 }
 ```
+
+### Toolbar
+
+```
+toolbar {
+  tools: filter, focus, cluster;
+}
+```
