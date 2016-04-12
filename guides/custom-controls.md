@@ -3,6 +3,9 @@ the top level (eg view-toggle vs button-group). Pretty sure we want the behavior
 to be top level. Just easier to understand what the controls are doing at a
 quick glance.
 
+Here's some inspiration for how we might document the controls:
+https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/UIKitUICatalog/UIToolbar.html#//apple_ref/doc/uid/TP40012857-UIToolbar-SW1
+
 ### Color legend
 
 **Example**
@@ -143,6 +146,16 @@ stat {
 
 ```
 toolbar {
-  tools: filter, focus, cluster;
+  button {
+    action: filter;
+    label: "Filter";
+    icon: filter;
+  }
+  
+  button {
+    action: focus;
+    label: "Focus";
+    icon: focus;
+  }
 }
 ```
