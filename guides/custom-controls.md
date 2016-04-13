@@ -90,12 +90,12 @@ view-toggle {
 ```
 // behavior-driven approach
 cluster {
-  option {
+  cluster-option {
     value: person by "skills offered" as "Skill";
     label: "By offers";
   }
   
-  option {
+  cluster-option {
     value: person by "skills needed" as "Skill";
     label: "By needs";
   }
@@ -146,13 +146,13 @@ stat {
 
 ```
 toolbar {
-  button {
+  toolbar-button {
     action: filter;
     label: "Filter";
     icon: filter;
   }
   
-  button {
+  toolbar-button {
     action: focus;
     label: "Focus";
     icon: focus;
