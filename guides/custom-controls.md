@@ -11,9 +11,22 @@ https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/
 **Example**
 
 ```
+// inherited colors
 color-legend {
-  direction: vertical;
-  colors: red "Red things", blue "Blue things";
+  colors: inherit-element-color;
+}
+
+// explicit colors
+color-legend {
+  color {
+    value: red;
+    label: "Red things";
+  }
+  
+  color {
+    value: blue;
+    label: "Blue things";
+  }
 }
 ```
 
@@ -22,7 +35,7 @@ color-legend {
 - direction: vertical (default) or horizontal
 - colors:
   - color "label", color "label", etc 
-  - inherit (will try to build from element-color/connection-color settings)
+  - inherit-element-color (build from @settings)
 
 **Advanced usage**
 
