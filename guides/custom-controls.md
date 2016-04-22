@@ -6,6 +6,30 @@ quick glance.
 Here's some inspiration for how we might document the controls:
 https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/UIKitUICatalog/UIToolbar.html#//apple_ref/doc/uid/TP40012857-UIToolbar-SW1
 
+### Title
+
+```
+title {
+  value: "The map title";
+}
+```
+
+### Text
+
+```
+text {
+  value: "This is for longer text.";
+}
+```
+
+### Label
+
+```
+label {
+  value: "This is for small bold labels.";
+}
+```
+
 ### Color legend
 
 **Example**
@@ -13,7 +37,7 @@ https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/
 ```
 // inherited colors
 color-legend {
-  colors: inherit-element-color;
+  colors: inherit;
 }
 
 // explicit colors
@@ -35,7 +59,7 @@ color-legend {
 - direction: vertical (default) or horizontal
 - colors:
   - color "label", color "label", etc 
-  - inherit-element-color (build from @settings)
+  - inherit / inherit-element-color (build from @settings)
 
 **Advanced usage**
 
