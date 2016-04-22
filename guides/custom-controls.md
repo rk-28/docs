@@ -203,7 +203,8 @@ TODO: include vs ignore, select one or many
 
 ```
 tagged-timeline {
-  range: 2007..2016;
+  range: 2007..2016; // required
+  target: element;   // optional, defaults to *
 }
 ```
 
