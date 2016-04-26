@@ -208,3 +208,66 @@ tagged-timeline {
 }
 ```
 
+### Filter
+
+```
+filter {
+  type: toggle-many;
+  target: element; // optional, defaults to *
+  field: "state";
+  values: auto;
+  multiple: true;
+}
+
+filter {
+  type: select;
+  
+  filter-option {
+    selector: 
+  }
+}
+```
+
+### Dropdown
+
+```
+dropdown {
+
+}
+
+dropdown {
+  dropdown-option {
+    label: "Hawaii";
+    value: "HI";
+  }
+}
+```
+
+### Adjust
+
+For toggling inline partials on/off
+
+```
+???
+```
+
+### Toggle
+
+I don't think generic top-level controls will work but just want to flush out what they might look like.
+
+```
+toggle {
+  type: simple; // simple, pillselect
+  style: subtle;
+  multiple: true;
+  
+  toggle-option {
+    label: "2008";
+    selector: element[year~=2008]; // selector or target?
+    
+    declarations {
+      display: none;
+    }
+  }
+}
+```
