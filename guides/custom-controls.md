@@ -228,6 +228,33 @@ filter {
 }
 ```
 
+### Field filter
+
+```
+field-filter {
+  field: "State"; // required
+  values: auto;   // optional, defaults to auto
+  multiple: true; // optional, defaults to false
+  as: dropdown;   // optional, either dropdown | buttons | labels
+}
+
+field-filter {
+  field: "State";
+  values: Alabama, Alaska, ...;
+}
+
+field-filter {
+  field: "State";
+  
+  option {
+    label: Hawaii;
+    value: HI;
+  }
+  
+  ...
+}
+```
+
 ### Dropdown
 
 ```
