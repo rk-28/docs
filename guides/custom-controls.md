@@ -9,7 +9,7 @@ https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/
 ### Title
 
 ```
-title {
+title {f
   value: "The map title";
 }
 ```
@@ -235,6 +235,7 @@ field-filter {
   field: "State"; // required
   values: auto;   // optional, defaults to auto
   multiple: true; // optional, defaults to false
+  required: true; // optional, defaults to false to allow selection to be cleared
   as: dropdown;   // optional, either dropdown | buttons | labels
 }
 
