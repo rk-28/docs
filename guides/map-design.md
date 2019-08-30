@@ -2,12 +2,55 @@
 
 Regardless of what you're mapping in Kumu, **design** plays a key role in making sure you and your audience can read the visualization and draw insight from it.
 
-This includes both graphic design—making the map looks visually pleasing—and user experience design—making sure your audience can easily interact with the map, even if they have never used Kumu or seen a system/network map before.
+This includes both graphic design and user experience design:
+- **Graphic design**—making sure your audience can easily read the map
+- **User experience design**—making sure your audience can easily interact with the map, even if they have never used Kumu or seen a system/network map before
+
+This guide covers the basics of effective graphic design and user experience design in Kumu. _Don't_ read this guide as if it were a set of rigid rules you need to follow on every project, but _do_ interpret it as a set of tactics and guidelines that will help you and your audience make sense of complexity.
+
+
+## Graphic design
+
+**Graphic design** includes all of the actions you will take to represent your information visually. Colors, sizes, shapes, and layouts are
+
+
+### Color
+
+Color is one of the most common and most effective ways to visually represent your data in Kumu.
+
+You can color-code qualitative data—for example, assign colors to factors in a system based on what section or sub-system they belong to:
+
+![Color coding a map based on qualitative data](/images/qualitative-color-coding.png)
+
+And you can also color-code quantitative data—for example, assign lighter colors to weaker connections and darker colors to stronger connections:
+
+![Color coding a map based on quantitative data](/images/quantitative-color-coding.png)
+
+
+
+### Size
+
+Size is a go-to visual tool for representing any numbers stored in your elements and connections.
+
+You can scale the size of elements and connections based on numbers like net worth, total grants received/awarded, or any of our [system and network analysis metrics](/guides/metrics.html).
+
+You can also assign fixed sizes to groups of elements to make them stand out a bit more—for example, you might want
+
+### Shape
+
+Using different shapes can be a great way to distinguish between different types of elements.
+
+Note that Kumu only supports circles and squares by default, but you can check our our FAQ on changing element shape
+
+### Layout
 
 
 
 
-## Describe the map with simple language
+## User experience design
+
+
+### Describe the map with simple language
 
 When we're talking about Kumu with other Kumu users or here in the documentation, we tend to use terms like "element", "connection", "network map", "system map", etc. But, when you're introducing a map, it's best to eschew technical terms as much as possible and just keep it simple.
 
@@ -23,7 +66,7 @@ Next, clearly explain what each "circle" represents (or "square", if you're usin
 ![Describe the map with simple language](/images/describe-the-map-with-simple-language.png)
 
 
-## Teach the basics of using Kumu
+### Teach the basics of using Kumu
 
 Many of Kumu's interactive features are intuitive. For example, **scrolling** will zoom in and out of the map, and **clicking** on items will bring up their profiles, where you can see more information. Those behaviors are exactly what you would expect if you're accustomed to popular mapping tools like Google Maps or Waze.
 
@@ -56,11 +99,11 @@ And just for fun, press <kbd>B</kbd> to bump the map!
 ```
 
 
-## Explain your controls
+### Explain your controls
 
 ![Explain your controls](/images/explain-your-controls.png)
 
 
-## Define SNA metrics
+### Define SNA metrics
 
 ![Define SNA metrics](/images/define-sna-metrics.png)
