@@ -6,12 +6,12 @@ This includes both graphic design and user experience design:
 - **Graphic design**—making sure your audience can easily read the map
 - **User experience design**—making sure your audience can easily interact with the map, even if they have never used Kumu or seen a system/network map before
 
-This guide covers the basics of effective graphic design and user experience design in Kumu. _Don't_ read this guide as if it were a set of rigid rules you need to follow on every project, but _do_ interpret it as a set of tactics and guidelines that will help you and your audience make sense of complexity.
+This guide covers the basics of effective graphic design and user experience design in Kumu. Don't read this guide as if it were a set of rigid rules you need to follow on every project, but _do_ interpret it as a set of tactics and guidelines that will help you and your audience get the most value out of Kumu.
 
 
 ## Graphic design
 
-**Graphic design** includes all of the actions you will take to represent your information visually. Colors, sizes, shapes, and layouts are
+**Graphic design** includes all of the actions you will take to represent your information visually. Color, size, shape, and layout are the core tools at your disposal—we'll describe each one below and give some helpful tips for how to use them.
 
 
 ### Color
@@ -25,6 +25,30 @@ You can color-code qualitative data—for example, assign colors to factors in a
 And you can also color-code quantitative data—for example, assign lighter colors to weaker connections and darker colors to stronger connections:
 
 ![Color coding a map based on quantitative data](/images/quantitative-color-coding.png)
+
+To add color coding to your view, check out [our guide on the Color By tool](/guides/decorate.html#color-by). Here are some additional tips to remember when working with color:
+
+#### Try to use color-coding to represent only one field at a time.
+If you're color coding circles by element type, you usually won't want to color code connections, nor will you want to add flags to your elements—if you do, the map might have too many colors for the reader to remember, and it will be more difficult to read.
+
+If you have two important fields that both deserve to be visualized, you can create different [views](/guides/views.html) for each color scheme. Or, if you want the reader to be able to easily choose which field should be color-coded, check out the quick tip video in [our partial views guide](/guides/partial-views.html).
+
+#### If you're using [flags](/guides/flags.html), keep the inner circle gray, or a light, subtle shade of another color.
+This will help keep the attention _off_ of the un-colored circle and _on_ the flags, which is where the important data is being represented.
+
+#### Color-code your qualitative data, but only when there are 12 or fewer possible values in the field.
+Kumu's biggest color palette has 12 colors in it, so if you are color-coding 15 different element types, 3 of them will be left without an assigned color.
+
+It's possible to [define your own color palette](/guides/color-reference.html) with more colors, but the more colors you add, the more difficult it will be for readers—especially readers with color vision deficiency—to distinguish between all of them.
+
+If you have an important field that should be visually represented but has more than 12 values, we recommend using [clustering](/guides/clustering.html) as an alternative.
+
+<!-- TODO: quantitative log scale tip -->
+
+#### Don't forget about transparent!
+Giving circles a border and making them transparent with no fill color at all is useful way to distinguish between different groups of elements. For example when you're using clustering, you might want to color-code your core elements by element type, but leave the cluster elements transparent:
+
+![Transparent elements with border](/images/transparent-circles.png)
 
 
 
