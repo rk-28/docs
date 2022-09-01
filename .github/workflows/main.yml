@@ -17,6 +17,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          script: |
-             /home/ubuntu/test.sh
+          script: /home/ubuntu/test.sh
          
