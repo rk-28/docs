@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run script file
       run: |
-         home/ubuntu/test.sh
+         /home/ubuntu/test.sh
       shell: bash
