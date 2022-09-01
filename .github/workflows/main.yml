@@ -15,10 +15,8 @@ jobs:
            username: ${{ secrets.USERNAME }}
            password: ${{ secrets.PRIVATE_KEY }}
            port: 22
-     - name: Run script file
-       uses: actions/checkout@v2
-       run: | 
-         cd /home/ubuntu/
-         /home/ubuntu/test.sh
+           run: | 
+            cd /home/ubuntu/
+            /home/ubuntu/test.sh
        
          
