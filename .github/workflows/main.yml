@@ -13,10 +13,10 @@ jobs:
 # uses: appleboy/ssh-action@f9010ff7f1bbd7db1a0b4bab661437550cea20c0
        uses: appleboy/ssh-action@v0.1.5
        with:
-        host: ${{ secrets.HOST }} #public IP
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: 22
-        script: |
-         /home/ubuntu/test.sh
+          host: ${{ secrets.HOST }} #public IP
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+             /home/ubuntu/test.sh
          
