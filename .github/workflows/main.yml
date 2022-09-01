@@ -13,13 +13,12 @@ jobs:
        with:
            host: ${{ secrets.HOST }} #public IP
            username: ${{ secrets.USERNAME }}
-           password: ${{ secrets.PASSWORD }}
+           password: ${{ secrets.PRIVATE_KEY }}
+           port: 22
      - name: Run script file
        uses: actions/checkout@v2
-       with:
-           run: | 
-            cd /home/ubuntu/
-            /home/ubuntu/test.sh
-           shell: bash
+       run: | 
+         cd /home/ubuntu/
+         /home/ubuntu/test.sh
        
          
