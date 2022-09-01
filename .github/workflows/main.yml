@@ -9,14 +9,17 @@ jobs:
      runs-on: ubuntu-20.04
      steps:
      - name: SSH Remote Commands
-# You may pin to the exact commit or the version.
-# uses: appleboy/ssh-action@f9010ff7f1bbd7db1a0b4bab661437550cea20c0
-       uses: appleboy/ssh-action@v0.1.5
+       uses: appleboy/ssh-action@v0.1.2
        with:
            host: ${{ secrets.HOST }} #public IP
            username: ${{ secrets.USERNAME }}
            password: ${{ secrets.PASSWORD }}
-           script: | 
-             cd /home/ubuntu/
-             /home/ubuntu/test.sh
+     - name: Run script file
+       uses: actions/checkout@v2
+       with:
+           run: | 
+            cd /home/ubuntu/
+            /home/ubuntu/test.sh
+           shell: bash
+       
          
